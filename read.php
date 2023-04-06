@@ -1,13 +1,13 @@
 <?php
-// Connect to the database
+
 $conn = mysqli_connect("localhost", "sanjai", "sanjai19", "myDB");
 
-// Check connection
+
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// Select all leads
+// Select all
 $sqlSelect = "SELECT * FROM table1";
 $result = mysqli_query($conn, $sqlSelect);
 
@@ -30,6 +30,6 @@ if (mysqli_num_rows($result) > 0) {
 }
 
 
-// Close database connection
+
 mysqli_close($conn);
 ?>
