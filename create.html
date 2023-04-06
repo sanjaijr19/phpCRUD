@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h2>Create Lead</h2>
+    <form action="create.php" method="post">
+        <label for="leadName">Lead Name:</label><br>
+        <input type="text" id="leadName" name="leadName" maxlength="25" required><br>
+        <label for="contactNumber">Contact Number:</label><br>
+        <input type="number" id="contactNumber" name="contactNumber" pattern="\d{10}" required><br>
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" maxlength="250" required></textarea><br>
+        <label for="notes">Notes:</label><br>
+        <textarea id="notes" name="notes" rows="4" cols="50" maxlength="250" required></textarea><br>
+        <label for="dob">DOB:</label><br>
+        <input type="date" id="dob" name="dob" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <input type="submit" value="Create">
+    </form>
+    <h2>Leads List</h2>
+</head>
+<body>
+
+</body>
+</html>
